@@ -1,0 +1,53 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2022-01-26 23:26:50.984  INFO 16272 --- [           main] com.example.demo.SareetaApplication      : Starting SareetaApplication on DESKTOP-J43CQOD with PID 16272 (C:\Users\Ja\IdeaProjects\nd035-c4-Security-and-DevOps\starter_code\target\classes started by Ja in C:\Users\Ja\IdeaProjects\nd035-c4-Security-and-DevOps)
+2022-01-26 23:26:50.997  INFO 16272 --- [           main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2022-01-26 23:26:53.043  INFO 16272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 23:26:53.209  INFO 16272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139ms. Found 4 JPA repository interfaces.
+2022-01-26 23:26:56.626  INFO 16272 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-01-26 23:26:56.664  INFO 16272 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-26 23:26:56.665  INFO 16272 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-01-26 23:26:57.055  INFO 16272 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-26 23:26:57.056  INFO 16272 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5845 ms
+2022-01-26 23:26:57.756  INFO 16272 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 23:26:57.897  INFO 16272 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-01-26 23:26:58.411  INFO 16272 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-01-26 23:26:58.815  INFO 16272 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-26 23:26:59.940  INFO 16272 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-26 23:27:00.140  INFO 16272 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-26 23:27:03.675  INFO 16272 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 23:27:03.690  INFO 16272 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 23:27:04.976  WARN 16272 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 23:27:05.978  INFO 16272 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@531bec12, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e35a0d, org.springframework.security.web.header.HeaderWriterFilter@21579b35, org.springframework.web.filter.CorsFilter@24563809, org.springframework.security.web.authentication.logout.LogoutFilter@5a3be84, com.example.demo.security.JWTAuthenticationFilter@41d84abb, com.example.demo.security.JWTAuthenticationVerficationFilter@54087bdb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3966c679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f5ecada, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@587f6634, org.springframework.security.web.session.SessionManagementFilter@74cd8c55, org.springframework.security.web.access.ExceptionTranslationFilter@3aed692d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@333efb51]
+2022-01-26 23:27:06.083  INFO 16272 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-26 23:27:06.389  INFO 16272 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-26 23:27:06.404  INFO 16272 --- [           main] com.example.demo.SareetaApplication      : Started SareetaApplication in 17.026 seconds (JVM running for 18.825)
+2022-01-26 23:27:24.302  INFO 16272 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-26 23:27:24.302  INFO 16272 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-26 23:27:24.331  INFO 16272 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2022-01-26 23:27:24.914  INFO 16272 --- [nio-8080-exec-2] c.e.demo.controllers.CartController      : User milena successfully created.
+2022-01-26 23:27:57.837 ERROR 16272 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : User not found with username mile
+2022-01-26 23:28:11.897 ERROR 16272 --- [nio-8080-exec-7] c.e.demo.controllers.CartController      : User not found with username mile
+2022-01-26 23:28:19.211  INFO 16272 --- [nio-8080-exec-8] c.e.demo.controllers.CartController      : Item added successfully to cart. Username: milena, Item ID: 1
+2022-01-26 23:28:25.981  INFO 16272 --- [nio-8080-exec-9] c.e.demo.controllers.CartController      : Item added successfully to cart. Username: milena, Item ID: 2
+2022-01-26 23:28:30.431 ERROR 16272 --- [io-8080-exec-10] c.e.demo.controllers.CartController      : Item not found with ID 5
+2022-01-26 23:28:50.777 ERROR 16272 --- [nio-8080-exec-1] c.e.demo.controllers.CartController      : User not found with username myla
+2022-01-26 23:29:00.106  INFO 16272 --- [nio-8080-exec-2] c.e.demo.controllers.CartController      : Item removed successfully from cart. Username: milena, Item ID: 1
+2022-01-26 23:29:06.473 ERROR 16272 --- [nio-8080-exec-3] c.e.demo.controllers.CartController      : Item not found with ID 18
+2022-01-26 23:29:12.221  INFO 16272 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : Item removed successfully from cart. Username: milena, Item ID: 1
+2022-01-26 23:29:34.874  INFO 16272 --- [nio-8080-exec-5] c.e.demo.controllers.CartController      : Item added successfully to cart. Username: milena, Item ID: 2
+2022-01-26 23:30:14.779  INFO 16272 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : Order successfully submitted. Username: milena
+2022-01-26 23:30:29.884 ERROR 16272 --- [nio-8080-exec-7] c.e.demo.controllers.CartController      : User not found with username mo
+2022-01-26 23:30:59.315 ERROR 16272 --- [nio-8080-exec-1] c.e.demo.controllers.CartController      : Item not found with name Round Wi
+2022-01-26 23:31:06.621  INFO 16272 --- [nio-8080-exec-2] c.e.demo.controllers.CartController      : Item found with name Round Widget
+2022-01-26 23:31:27.677 ERROR 16272 --- [nio-8080-exec-3] c.e.demo.controllers.CartController      : User not created due to invalid password. Either length is less than 7 or pass and conf pass do not match.
+2022-01-26 23:31:38.099  INFO 16272 --- [nio-8080-exec-5] c.e.demo.controllers.CartController      : User karol successfully created.
+2022-01-26 23:31:49.271  INFO 16272 --- [nio-8080-exec-6] c.e.demo.controllers.CartController      : Item added successfully to cart. Username: karol, Item ID: 2
+2022-01-26 23:32:00.250  INFO 16272 --- [nio-8080-exec-7] c.e.demo.controllers.CartController      : Order successfully submitted. Username: karol
