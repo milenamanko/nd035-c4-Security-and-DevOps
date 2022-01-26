@@ -13,9 +13,13 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "item")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Item {
 
 	@Id

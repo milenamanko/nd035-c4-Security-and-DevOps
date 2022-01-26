@@ -2,6 +2,7 @@ package com.example.demo.controllers;
 
 import java.util.List;
 
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +20,8 @@ import com.example.demo.model.persistence.repositories.UserRepository;
 
 @RestController
 @RequestMapping("/api/order")
+@NoArgsConstructor
 public class OrderController {
-	
 	
 	@Autowired
 	private UserRepository userRepository;

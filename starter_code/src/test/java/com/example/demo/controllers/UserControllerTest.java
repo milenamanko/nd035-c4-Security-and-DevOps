@@ -100,7 +100,7 @@ public class UserControllerTest {
 
     @Test
     public void getUserByNameHappyPathTest() throws Exception {
-        
+
         final ResponseEntity<User> response = userController.findByUserName("userNotFound");
 
         assertNotNull(response);
