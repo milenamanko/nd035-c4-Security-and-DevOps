@@ -97,12 +97,6 @@ public class OrderControllerTest {
         assertEquals(3, userOrders.get(0).getItems().size());
     }
 
-//    @Test
-//    public void getOrdersForInvalidUserTest() throws Exception {
-//
-//    }
-
-
     private User createUser() {
 
         User user = new User();
