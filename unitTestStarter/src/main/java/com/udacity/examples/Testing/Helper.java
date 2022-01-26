@@ -12,7 +12,7 @@ public class Helper {
 	    * @return
 	    */
 		public static long getCount(List<String> strings){
-			return strings.stream().filter(string->string.isEmpty()).count();
+			return strings.stream().filter(string->!string.isEmpty()).count();
 		}
 		
 		/**
