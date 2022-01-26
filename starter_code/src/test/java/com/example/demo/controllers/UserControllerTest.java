@@ -5,12 +5,15 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.CreateUserRequest;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
@@ -18,7 +21,7 @@ import java.util.Optional;
 
 import static org.junit.Assert.*;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class UserControllerTest {
 
     private UserController userController;
@@ -32,9 +35,13 @@ public class UserControllerTest {
     @Mock
     private BCryptPasswordEncoder encoder;
 
-    @Before
+    @BeforeEach
     public void setup() {
+
+        MockitoAnnotations.initMocks(this);
+
         userController = new UserController();
+
         TestUtils.injectObjects(userController, "userRepository", userRepo);
         TestUtils.injectObjects(userController, "cartRepository", cartRepo);
         TestUtils.injectObjects(userController, "bCryptPasswordEncoder", encoder);
